@@ -30,7 +30,6 @@ requirements:
 test:
   imports:
     - verticapy
-    - verticapy.connections
   commands:
     - pip check
   requires:
