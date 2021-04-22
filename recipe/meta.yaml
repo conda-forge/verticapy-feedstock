@@ -1,5 +1,5 @@
 {% set name = "verticapy" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
-  sha256: bd0a4fb0ca10b8b13ed6cc6a4db9dd30b03718fe8bde16599fa920004a6ac404
+  sha256: a4a7fc9ac4271e2ea401b64894f124e8d30f86ad7a3393e4dfa1fe2746b4999a
 
 build:
   number: 0
@@ -25,11 +25,11 @@ requirements:
     - python >=2.7
     - scipy
     - vertica-python
+    - python-dateutil
 
 test:
   imports:
     - verticapy
-    - verticapy.connections
   commands:
     - pip check
   requires:
