@@ -26,6 +26,8 @@ requirements:
     - scipy
     - vertica-python
     - python-dateutil
+    - python-graphviz
+    - requests-kerberos
 
 test:
   imports:
