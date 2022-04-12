@@ -116,4 +116,5 @@ Feedstock Maintainers
 =====================
 
 * [@FernandezMathieu](https://github.com/FernandezMathieu/)
-
+* [@oualib](https://github.com/oualib)
+* [@afard](https://github.com/afard)
