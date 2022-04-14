@@ -11,21 +11,25 @@ source:
   sha256: f519ed4029937eb1c734b1dadbe2ca0f135d56de78ba3a2099b245e73d776a62
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.6
+    - python <=3.8
   run:
     - matplotlib-base
     - numpy
-    - python >=2.7
+    - python >=3.6
+    - python <=3.8
     - scipy
     - vertica-python
     - python-dateutil
+    - python-graphviz
+    - requests-kerberos
 
 test:
   imports:
