@@ -30,6 +30,7 @@ requirements:
     - python-dateutil
     - python-graphviz
     - requests-kerberos
+    - tqdm
 
 test:
   imports:
