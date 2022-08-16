@@ -1,5 +1,5 @@
 {% set name = "verticapy" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
-  sha256: 7dd354c4d83bdb6fc9801bfdc4c65a4ba1af59d850e174ed05bf2315b07ee324
+  sha256: 1707eb8d83bd2ec959edc66af1e8b94e6f2cae973afdb894ac6aa0da6e905d81
 
 build:
   number: 0
