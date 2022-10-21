@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - python <3.9
   run:
-    - matplotlib-base
+    - matplotlib-base <=3.5.3
     - numpy
     - python >=3.6
     - python <3.9
