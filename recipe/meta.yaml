@@ -19,12 +19,12 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - python <3.9
+    - python <=3.9
   run:
     - matplotlib-base <=3.5.3
     - numpy
     - python >=3.6
-    - python <3.9
+    - python <=3.9
     - scipy
     - vertica-python
     - python-dateutil
