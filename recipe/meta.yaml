@@ -11,7 +11,7 @@ source:
   sha256: 80dbd1e6fb57eca90c978939b841228bb60675ad101a63810e764a37a3e875e2
 
 build:
-  number: 4
+  number: 5
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,6 +32,7 @@ requirements:
     - requests-kerberos
     - tqdm >=4.0.0
     - pandas >=0.23.0
+    - python-highcharts
     - plotly >=5.10.0
 
 test:
@@ -53,6 +54,7 @@ test:
     - scikit-learn
     - xgboost
     - statsmodels
+    - vertica_highcharts
 
 about:
   home: https://github.com/vertica/VerticaPy
