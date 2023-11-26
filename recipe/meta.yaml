@@ -11,7 +11,7 @@ source:
   sha256: 80dbd1e6fb57eca90c978939b841228bb60675ad101a63810e764a37a3e875e2
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,7 +32,6 @@ requirements:
     - requests-kerberos
     - tqdm >=4.0.0
     - pandas >=0.23.0
-    - vertica-highcharts >=0.1.2
     - plotly >=5.10.0
 
 test:
