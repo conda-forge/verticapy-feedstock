@@ -1,5 +1,5 @@
 {% set name = "verticapy" %}
-{% set version = "0.12.0" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,31 +8,32 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
-  sha256: 3d85045e0852d977275795fc8ee20db7fb699ae94d9de71b05971952c097523b
+  sha256: 80dbd1e6fb57eca90c978939b841228bb60675ad101a63810e764a37a3e875e2
 
 build:
-  number: 1
+  number: 6
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
-    - python <=3.9
+    - python >=3.9
+    - python <=3.12
   run:
-    - matplotlib-base <=3.5.3
-    - numpy
-    - python >=3.6
-    - python <=3.9
-    - scipy
-    - vertica-python
-    - python-dateutil
-    - python-graphviz
+    - matplotlib-base >=3.5.2
+    - numpy >=1.11.0
+    - python >=3.9
+    - python <=3.12
+    - scipy >=1.0.0
+    - vertica-python >=1.2.0
+    - python-dateutil 
+    - python-graphviz >=0.9.0
     - requests-kerberos
-    - tqdm
-    - pandas
-    - python-highcharts
+    - tqdm >=4.0.0
+    - pandas >=0.23.0
+    - vertica_highcharts >=0.1.2
+    - plotly >=5.10.0
 
 test:
   imports:
@@ -41,6 +42,18 @@ test:
     - pip check
   requires:
     - pip
+    - pytest
+    - pytest-timeout
+    - pytest-cov
+    - parameterized
+    - mock
+    - graphviz
+    - geopandas
+    - descartes
+    - ipython
+    - scikit-learn
+    - xgboost
+    - statsmodels
 
 about:
   home: https://github.com/vertica/VerticaPy
