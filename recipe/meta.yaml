@@ -1,5 +1,5 @@
 {% set name = "verticapy" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
-  sha256: 80dbd1e6fb57eca90c978939b841228bb60675ad101a63810e764a37a3e875e2
+  sha256: 44246c2ee929c2a837b0f55c8887602e8eda1ca07b09a5b1b041699d4d23b197
 
 build:
-  number: 6
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ requirements:
     - python <=3.12
     - scipy >=1.0.0
     - vertica-python >=1.2.0
-    - python-dateutil 
+    - python-dateutil
     - python-graphviz >=0.9.0
     - requests-kerberos
     - tqdm >=4.0.0
