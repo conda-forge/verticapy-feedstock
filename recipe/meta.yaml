@@ -1,5 +1,5 @@
 {% set name = "verticapy" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
-  sha256: 44246c2ee929c2a837b0f55c8887602e8eda1ca07b09a5b1b041699d4d23b197
+  sha256: 4ef89ceae35066d61543586586d1c1ab4782450d7af7752eaa473a21365076a8
 
 build:
   number: 0
@@ -32,8 +32,9 @@ requirements:
     - requests-kerberos
     - tqdm >=4.0.0
     - pandas >=0.23.0
-    - vertica_highcharts >=0.1.2
+    - vertica_highcharts >=0.1.4
     - plotly >=5.10.0
+    - pyyaml >=6.0.1
 
 test:
   imports:
