@@ -32,8 +32,9 @@ requirements:
     - requests-kerberos
     - tqdm >=4.0.0
     - pandas >=0.23.0
-    - vertica_highcharts >=0.1.2
+    - vertica_highcharts >=0.1.4
     - plotly >=5.10.0
+    - pyyaml>=6.0.1
 
 test:
   imports:
