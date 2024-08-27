@@ -53,7 +53,7 @@ test:
     - descartes
     - ipython
     - scikit-learn
-    - xgboost
+    - xgboost <2.1.1
     - statsmodels
 
 about:
