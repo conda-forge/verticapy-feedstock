@@ -50,7 +50,7 @@ test:
     - mock
     - graphviz
     - geopandas
-    - descartes =1.0.2
+    - descartes ==1.0.2
     - ipython
     - scikit-learn
     - xgboost <2.1.0
