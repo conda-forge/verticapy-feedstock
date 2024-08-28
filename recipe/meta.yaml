@@ -51,7 +51,6 @@ test:
     - mock
     - graphviz
     - geopandas
-    - descartes
     - ipython
     - scikit-learn
     - xgboost <2.1.0
