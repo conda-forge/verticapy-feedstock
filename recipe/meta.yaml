@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/verticapy-{{ version }}.tar.gz
   sha256: 6ae6a08b03787d16ba8eaf0f7cc97efec8505b3c92b9ed429ea7ad42c86a8622
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,13 +19,13 @@ requirements:
   host:
     - setuptools
     - pip
-    - python >=3.9
-    - python <=3.12
+    - python {{ python_min }}
+    - python {{ python_min }}
   run:
     - matplotlib-base >=3.5.2
     - numpy >=1.11.0
-    - python >=3.9
-    - python <=3.12
+    - python >={{ python_min }}
+    - python >={{ python_min }},<3.13a0
     - scipy >=1.0.0
     - vertica-python >=1.2.0
     - python-dateutil
@@ -55,6 +55,7 @@ test:
     - scikit-learn
     - xgboost <2.1.0
     - statsmodels
+    - python {{ python_min }}
 
 about:
   home: https://github.com/vertica/VerticaPy
