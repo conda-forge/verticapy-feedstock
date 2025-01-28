@@ -11,7 +11,7 @@ source:
   sha256: 369ec6b131445f650d4f5f78abe7c16a569267bee729d6c2204f51c3b8ca1fbc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -69,4 +69,3 @@ extra:
     - FernandezMathieu
     - oualib
     - afard
-    - condacircus
